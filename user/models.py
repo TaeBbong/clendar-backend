@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class User(models.Model()):
+class MyUser(models.Model()):
     def __init__(self):
         return
     def __str__(self):
