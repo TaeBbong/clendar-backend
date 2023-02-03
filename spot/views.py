@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from rest_framework import viewsets
 
-# Create your views here.
+from .models import Spot
+from .serializers import SpotSerializer
+
+
+class SpotViewSet(viewsets.ModelViewSet):
+    queryset = Spot.objects.all()
+    serializer_class = SpotSerializer

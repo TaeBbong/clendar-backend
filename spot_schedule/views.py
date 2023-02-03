@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from rest_framework import viewsets
 
-# Create your views here.
+from .models import SpotSchedule
+from .serializers import SpotScheduleSerializer
+
+
+class SpotViewSet(viewsets.ModelViewSet):
+    queryset = SpotSchedule.objects.all()
+    serializer_class = SpotScheduleSerializer
