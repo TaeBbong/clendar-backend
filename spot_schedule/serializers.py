@@ -4,4 +4,4 @@ from rest_framework import serializers
 class SpotScheduleSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = SpotSchedule
-        fields = ['url', 'title', 'date', 'spots',]
+        fields = ['url', 'title', 'date', 'spot',]
