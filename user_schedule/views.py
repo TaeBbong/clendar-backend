@@ -4,6 +4,6 @@ from .models import UserSchedule
 from .serializers import UserScheduleSerializer
 
 
-class SpotViewSet(viewsets.ModelViewSet):
+class UserScheduleViewSet(viewsets.ModelViewSet):
     queryset = UserSchedule.objects.all()
     serializer_class = UserScheduleSerializer

@@ -4,6 +4,6 @@ from .models import SpotSchedule
 from .serializers import SpotScheduleSerializer
 
 
-class SpotViewSet(viewsets.ModelViewSet):
+class SpotScheduleViewSet(viewsets.ModelViewSet):
     queryset = SpotSchedule.objects.all()
     serializer_class = SpotScheduleSerializer
